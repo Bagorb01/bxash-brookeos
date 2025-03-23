@@ -1,6 +1,8 @@
 import readline from "readline";
 import chalk from "chalk";
 import whoami from "./commands/whoami.js";
+import mission from "./commands/mission.js";
+import skills from "./commands/skills.js";
 
 const rl = readline.createInterface({
   input: process.stdin,
@@ -10,20 +12,34 @@ const rl = readline.createInterface({
 
 const commands = {
   help: () => {
-    console.log(chalk.bold("\nAvailableCommands:\n"));
-    console.log("   whoami      About Brooke");
-    console.log("   skills      Technology & tools");
-    console.log("   currently   Currently learning, reading, listening");
-    console.log("   fun         Random facts");
-    console.log("   exit        Exit BrookeOS\n");
+    console.log(chalk.bold("\nAvailable commands:\n"));
+    console.log(`   ${chalk.cyanBright("whoami")}      About Brooke`);
+    console.log(`   ${chalk.magentaBright("skills")}      Technology & tools`);
+    console.log(
+      `   ${chalk.blueBright("mission")}     Values, org types, product focus`
+    );
+    console.log(
+      `   ${chalk.yellowBright(
+        "currently"
+      )}   Currently learning, reading, listening`
+    );
+    console.log(`   ${chalk.greenBright("contact")}     Contact information`);
+    console.log(`   ${chalk.redBright("exit")}        Exit BrookeOS\n`);
   },
 
-  whoami: () => {
+  whoami: async () => {
     whoami();
   },
 
   //TODO: Finish skills
-  skills: () => {},
+  skills: () => {
+    skills();
+  },
+
+  //TODO: Finish mission
+  mission: () => {
+    mission();
+  },
 
   //TODO: Finish currently
   currently: () => {},
@@ -51,7 +67,7 @@ export async function startCLI() {
     if (commands[input]) {
       commands[input]();
     } else {
-      console.log(chalk.red(`Unknown command: ${input}. Try 'help'.`));
+      console.log(chalk.red(`Unknown command: ${input}. Try 'help'.\n`));
     }
 
     rl.prompt();

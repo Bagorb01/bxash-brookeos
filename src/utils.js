@@ -18,4 +18,7 @@ export async function typewriter(text, delay = 30) {
   }
   process.stdout.write('\n')
 }
-                                                              
+              
+export function sleep(ms) {
+  return new Promise((res) => setTimeout(res, ms));
+}

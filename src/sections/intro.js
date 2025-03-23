@@ -8,6 +8,7 @@ export default function intro() {
   const role = morning("Senior Software Engineer");
   const location = morning("Louisville, KY");
 
+  // prettier-ignore
   console.log(`
              ________________________________________________
             /                                                \\
@@ -70,7 +71,7 @@ export async function boot() {
 
   await typewriter(
     chalk.greenBright(
-      "\n>> All systems online. Proceed with curiosity.\n\nType 'help' to get started.\n"
+      "\n>> All systems online. Proceed with curiosity.\n\n>> Type 'help' to get started."
     )
   );
 
