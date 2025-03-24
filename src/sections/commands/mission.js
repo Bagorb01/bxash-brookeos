@@ -30,6 +30,4 @@ export default function mission() {
   console.log('')
 
   console.log(`➡️  Still with me? Type ${chalk.yellowBright('currently')} to see what's lighting me up lately.\n`);
-
-  console.log('')
 }

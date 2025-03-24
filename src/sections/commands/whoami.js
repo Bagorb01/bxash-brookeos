@@ -2,7 +2,7 @@ import chalk from "chalk";
 import boxen from "boxen";
 import { summer } from "gradient-string";
 
-export default function whoamiSummary() {
+export default function whoami() {
   console.log("");
 
   // prettier-ignore
@@ -29,6 +29,4 @@ export default function whoamiSummary() {
   console.log("");
 
   console.log(`➡️  Wondering what I’m good at? Type ${chalk.magentaBright('skills')} to peek into my toolbox.\n`);
-
-  console.log("");
 }

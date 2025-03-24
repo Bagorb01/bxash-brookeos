@@ -50,6 +50,4 @@ export default function skills() {
 
   // prettier-ignore
   console.log(`➡️  Curious what I care about? Type ${chalk.blueBright('mission')} to check my mission protocols.\n`);
-
-  console.log("");
 }
