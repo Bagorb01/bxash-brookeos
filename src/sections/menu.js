@@ -1,10 +1,11 @@
 import readline from "readline";
 import chalk from "chalk";
-import { clearPreviousLines } from "../utils.js";
+import { clearPreviousLines, typewriter } from "../utils.js";
 import whoami from "./commands/whoami.js";
 import mission from "./commands/mission.js";
 import skills from "./commands/skills.js";
 import currently from "./commands/currently.js";
+import contact from "./commands/contact.js";
 
 let rl;
 
@@ -24,16 +25,16 @@ const commands = {
     console.log(commandText);
   },
 
-  whoami: () => {
-    whoami();
+  whoami: async () => {
+    await whoami();
   },
 
-  skills: () => {
-    skills();
+  skills: async () => {
+    await skills();
   },
 
-  mission: () => {
-    mission();
+  mission: async () => {
+    await mission();
   },
 
   currently: async () => {
@@ -43,8 +44,12 @@ const commands = {
     startCLI()
   },
 
-  exit: () => {
-    console.log(chalk.greenBright("\nLogging out... stay curious.\n"));
+  contact: async () => {
+    await contact()
+  },
+
+  exit: async () => {
+    await typewriter(chalk.bgGreenBright("\n>> Logging out... stay curious.\n"));
     rl.close();
   },
 };

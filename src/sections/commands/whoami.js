@@ -1,8 +1,9 @@
 import chalk from "chalk";
 import boxen from "boxen";
 import { summer } from "gradient-string";
+import { typewriter } from "../../utils.js";
 
-export default function whoami() {
+export default async function whoami() {
   console.log("");
 
   // prettier-ignore
@@ -28,5 +29,5 @@ export default function whoami() {
 
   console.log("");
 
-  console.log(`➡️  Wondering what I’m good at? Type ${chalk.magentaBright('skills')} to peek into my toolbox.\n`);
+  await typewriter(`➡️  Wondering what I’m good at? Type ${chalk.magentaBright('skills')} to peek into my toolbox.\n`);
 }

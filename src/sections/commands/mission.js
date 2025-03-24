@@ -1,8 +1,9 @@
 import boxen from "boxen";
 import chalk from "chalk";
 import { teen } from "gradient-string";
+import { typewriter } from "../../utils.js";
 
-export default function mission() {
+export default async function mission() {
   // prettier-ignore
   const mission = `
     ${teen("💡 Femtech & gender health equity")}
@@ -29,5 +30,5 @@ export default function mission() {
 
   console.log('')
 
-  console.log(`➡️  Still with me? Type ${chalk.yellowBright('currently')} to see what's lighting me up lately.\n`);
+  await typewriter(`➡️  Still with me? Type ${chalk.yellowBright('currently')} to see what's lighting me up lately.\n`);
 }

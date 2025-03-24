@@ -1,8 +1,9 @@
 import chalk from "chalk";
 import boxen from "boxen";
 import { atlas } from "gradient-string";
+import { typewriter } from "../../utils.js";
 
-export default function skills() {
+export default async function skills() {
   // prettier-ignore
   const primaryStack = `
   ${atlas("Frontend:")}   Vue, React, Tailwind
@@ -19,7 +20,7 @@ export default function skills() {
 
   console.log(
     boxen(primaryStack, {
-      title: "PRIMARY STACK",
+      title: `${chalk.white("PRIMARY STACK")}`,
       padding: 1,
       width: 80,
       borderStyle: "round",
@@ -38,16 +39,15 @@ export default function skills() {
 
   console.log(
     boxen(strengths, {
-      title: "STRENGTHS & STYLE",
+      title: `${chalk.magentaBright("STRENGTHS & STYLE")}`,
       padding: 1,
       width: 80,
       borderStyle: "round",
-      borderColor: "magentaBright",
     })
   );
 
   console.log("");
 
   // prettier-ignore
-  console.log(`➡️  Curious what I care about? Type ${chalk.blueBright('mission')} to check my mission protocols.\n`);
+  await typewriter(`➡️  Curious what I care about? Type ${chalk.blueBright('mission')} to check my mission protocols.\n`);
 }
