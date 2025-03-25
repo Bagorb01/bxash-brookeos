@@ -51,6 +51,7 @@ const commands = {
   exit: async () => {
     await typewriter(chalk.bgGreenBright("\n>> Logging out... stay curious.\n"));
     rl.close();
+    process.exit(0); 
   },
 };
 

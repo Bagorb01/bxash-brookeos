@@ -45,3 +45,7 @@ export async function typewriter(text, delay = 30) {
   }
   process.stdout.write("\n");
 }
+
+export function delay(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}

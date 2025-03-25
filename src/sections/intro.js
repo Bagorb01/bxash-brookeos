@@ -61,11 +61,9 @@ export async function boot() {
   ];
 
   for (const [index, step] of bootSteps.entries()) {
-    // if (index !== 0) await new Promise((res) => setTimeout(res, 1300));
-    if (index !== 0) await new Promise((res) => setTimeout(res, 1000));
+    if (index !== 0) await new Promise((res) => setTimeout(res, 1300));
     const spinner = ora(step.text).start();
-    // await new Promise((res) => setTimeout(res, 3000));
-    await new Promise((res) => setTimeout(res, 1000));
+    await new Promise((res) => setTimeout(res, 3000));
     spinner.succeed(chalk.cyan(step.success));
   }
 
