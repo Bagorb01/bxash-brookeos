@@ -1,5 +1,5 @@
 # 🖥️ BrookeOS
-A narrative, retro-inspired terminal experience to get to know me - Brooke - via `npx`.
+A narrative, retro-inspired terminal experience to get to know me via `npx`.
 
 Run it. Explore it. Learn more about how I work, what I love, and what I'm currently tinkering with.
 
@@ -23,8 +23,7 @@ BrookeOS includes a handful of interactive terminal commands:
 | currently | What I'm reading, learning, and obsessing over right now |
 | contact | How to reach out |
 
-Each command is a window into a different part of my brain —
-explore accordingly.
+Each command is a window into a different part of my brain. Explore accordingly... 🙃
 
 ## 🛠️ Built With
 
