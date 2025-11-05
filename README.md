@@ -1,7 +1,8 @@
 # 🖥️ BrookeOS
-A narrative, retro-inspired terminal experience to get to know me via `npx`.
 
-Run it. Explore it. Learn more about how I work, what I love, and what I'm currently tinkering with.
+A retro-inspired terminal experience to get to know me via `npx`.
+
+Learn more about how I work, what I love, and what I'm currently tinkering with.
 
 ## 🚀 Quick Start
 
