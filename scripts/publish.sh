@@ -65,8 +65,6 @@ esac
   new_version="${major}.${minor}.${patch}"
   echo "Bumping npm version from $current_version to $new_version"
   npm version $new_version
-  git commit -m "Bump npm version to $new_version"
-  git push
   echo "Publishing package..."
   npm publish
   ascii_success
