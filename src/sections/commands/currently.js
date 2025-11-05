@@ -29,7 +29,7 @@ const currentInterests = [
     header: "🧠 Currently learning...",
     answer: "Sims4 modding",
     description:
-      "Trying to teach my Sims the thrill of the racetrack. It’s called the Simtucky Derby, and yes — there will be hats.",
+      "Trying to teach my Sims the thrill of the racetrack. It’s called the Simtucky Derby 🐎",
   }
 ];
 

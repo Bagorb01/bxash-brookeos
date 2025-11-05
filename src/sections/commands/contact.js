@@ -10,7 +10,7 @@ export default async function contact() {
     "https://www.linkedin.com/in/brookegorbandt/"
   )}
 
-  P.S. Replace [at] with @ when emailing — I trust you'll get it.`;
+  P.S. Replace [at] with @ when emailing`;
 
   console.log("");
 
@@ -19,7 +19,7 @@ export default async function contact() {
       padding: 1,
       borderStyle: "round",
       borderColor: "greenBright",
-      title: "Reach out — if you feel the vibe",
+      title: "Reach out if you feel the vibe",
       textAlignment: "left",
     })
   );
