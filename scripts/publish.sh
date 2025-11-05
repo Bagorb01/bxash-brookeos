@@ -37,13 +37,10 @@ done
 esac
 
   new_version="${major}.${minor}.${patch}"
-  echo "✅ Pushing changes to remote..."
-  git push
   echo "✅ Bumping npm version from $current_version to $new_version"
   npm version $new_version
   echo "✅ Publishing package..."
   npm publish --ignore-scripts
   echo "🚀 SUCCESS!"
-
 
 exit 0
