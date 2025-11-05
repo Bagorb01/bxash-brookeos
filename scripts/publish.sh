@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-push_success_msg() {
+ascii_success() {
 `
               __________________________________________
              /                                         \\
@@ -63,9 +63,11 @@ done
 esac
 
   new_version="${major}.${minor}.${patch}"
-  echo "Bumping npm version from $current_version to $new_version"
+  echo "✅ Pushing changes to remote..."
+  git push
+  echo "✅ Bumping npm version from $current_version to $new_version"
   npm version $new_version
-  echo "Publishing package..."
+  echo "✅ Publishing package..."
   npm publish --ignore-scripts
   ascii_success
 
