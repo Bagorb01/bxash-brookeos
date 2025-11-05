@@ -10,39 +10,27 @@ import {
 const currentInterests = [
   {
     header: "📚 Currently reading...",
-    answer: "'Babel' by R.F. Kuang",
+    answer: "Tomorrow, and Tomorrow, and Tomorrow",
     description:
-      "A dark academia novel about language, translation, resistance, and colonialism.",
+      "A decades-spanning story of two friends who reunite to make video games and navigate creativity, fame, grief, and the complicated blur between love and friendship.",
   },
   {
     header: "🎶 Currently spinning...",
-    answer: "Kyle Dion",
+    answer: "Isiah Falls",
     description:
-      "Velvety vocals, smooth falsetto, silk shirts, and lyrics that make you feel a little too much.",
+      "Smooth vocals, intimate lyrics, and just dangerous enough that you lean in before you realize you’ve already fallen",
   },
   {
     header: "🎙️ Currently listening to...",
     answer: "My favorite podcasts",
-    description: `• Radiolab — to rewire how I see the world\n• Ride — for chaotic, creative energy\n• The Daily — to stay responsibly overwhelmed`,
+    description: `• Radiolab and This American Life — to rewire how I see the world\n• Ride — for chaotic, creative energy\n• The Daily — to stay responsibly overwhelmed`,
   },
   {
     header: "🧠 Currently learning...",
     answer: "Sims4 modding",
     description:
       "Trying to teach my Sims the thrill of the racetrack. It’s called the Simtucky Derby, and yes — there will be hats.",
-  },
-  {
-    header: "🔎 Currently obsessed with...",
-    answer: "Historical homes and design",
-    description:
-      "I traced the history of my century-old home through archives and local lore — now I’m restoring it room by room, with love and caulk.",
-  },
-  {
-    header: "🧐 Currently curious about...",
-    answer: "Small Language Models (SLMs)",
-    description:
-      "Lean, fast, and powerful — I’m intrigued by small language models and what they unlock, I just haven’t had time to dig deep yet.",
-  },
+  }
 ];
 
 const continuePrompts = [

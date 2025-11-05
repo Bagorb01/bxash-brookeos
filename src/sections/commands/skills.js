@@ -11,10 +11,10 @@ export default async function skills() {
   ${atlas("Database:")}   PostgreSQL, MongoDB
   
   Tools currently in orbit 💫
-  • Module Federation
-  • Rsbuild
-  • Zustand
-  • TypeScript`;
+  • Databricks
+  • Python
+  • LLMs
+  • DDD`;
 
   console.log("");
 
