@@ -28,29 +28,29 @@ while [[ $# -gt 0 ]]; do
   esac
 done
 
-case "$TYPE" in
+  case "$TYPE" in
   major)
     major=$((major + 1))
-    echo "bumping major"
     ;;
   minor)
     minor=$((minor + 1))
-    echo "bumping minor"
     ;;
   patch)
     patch=$((patch + 1))
-    echo "bumping patch"
     ;;
   *)
-    echo "invalid type (must be major | minor | patch)"
+    echo "Invalid type (must be major | minor | patch)"
     ;;
 esac
 
-new_version="${major}.${minor}.${patch}"
-echo "$new_version"
-
-# npm version $new_version
-# git commit -m "Bump npm version to $new_version for release"
+  new_version="${major}.${minor}.${patch}"
+  echo "Bumping npm version from $current_version to $new_version"
+  npm version $new_version
+  git commit -m "Bump npm version to $new_version"
+  git push
+  echo "Publishing package..."
+  npm publish
+  ascii_success
 }
 
 push_success_msg() {
@@ -78,5 +78,11 @@ push_success_msg() {
 :-------------------------------------------------------------------------:
 \`---._.-------------------------------------------------------------._.---\'`
 }
+
+if [[ -z "$TYPE" ]]; then
+  just_push
+else
+  release_and_publish
+fi
 
 exit 0
