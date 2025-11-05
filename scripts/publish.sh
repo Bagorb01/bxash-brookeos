@@ -66,7 +66,7 @@ esac
   echo "Bumping npm version from $current_version to $new_version"
   npm version $new_version
   echo "Publishing package..."
-  npm publish
+  npm publish --ignore-scripts
   ascii_success
 
 exit 0
