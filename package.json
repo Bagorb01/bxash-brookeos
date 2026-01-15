@@ -9,7 +9,7 @@
   "scripts": {
     "start": "nodemon ./src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "publish": "./publish.sh"
+    "publish": "./scripts/publish.sh"
   },
   "author": "",
   "license": "ISC",
