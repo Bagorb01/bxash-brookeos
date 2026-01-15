@@ -8,7 +8,7 @@ TYPE="patch"
 
 while [[ $# -gt 0 ]]; do
   case "$1" in
-    -type|--type)
+    -type|--type|-publish)
       TYPE="$2"
       shift 2
       ;;
