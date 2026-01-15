@@ -10,20 +10,20 @@ import {
 const currentInterests = [
   {
     header: "📚 Currently reading...",
-    answer: "Tomorrow, and Tomorrow, and Tomorrow",
+    answer: "Nothing to See Here by Kevin Wilson",
     description:
-      "A decades-spanning story of two friends who reunite to make video games and navigate creativity, fame, grief, and the complicated blur between love and friendship.",
+      "A quirky story about friendship, class, and children who literally combust under pressure"
   },
-  {
-    header: "🎶 Currently spinning...",
-    answer: "Isiah Falls",
-    description:
-      "Smooth vocals, intimate lyrics, and just dangerous enough that you lean in before you realize you’ve already fallen",
-  },
+  // {
+  //   header: "🎶 Currently spinning...",
+  //   answer: "The Muppets Christmas Carol Soundtrack",
+  //   description:
+  //     "Trying to let go of Christmas",
+  // },
   {
     header: "🎙️ Currently listening to...",
     answer: "My favorite podcasts",
-    description: `• Radiolab and This American Life — to rewire how I see the world\n• Ride — for chaotic, creative energy\n• The Daily — to stay responsibly overwhelmed`,
+    description: `• Radiolab - to rewire how I see the world\n• Ride - for chaotic, creative energy\n• Search Engine & Heavyweight - deep queries, human results`,
   },
   {
     header: "🧠 Currently learning...",

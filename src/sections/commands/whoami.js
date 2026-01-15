@@ -17,6 +17,7 @@ export default async function whoami() {
                       improving team processes, debugging with care,
                       and documenting the why
   `;
+  
   console.log(
     boxen(profile, {
       title: "PROFILE",

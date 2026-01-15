@@ -6,7 +6,7 @@ import { typewriter } from "../../utils.js";
 export default async function skills() {
   // prettier-ignore
   const primaryStack = `
-  ${atlas("Frontend:")}   Vue, React, Tailwind
+  ${atlas("Frontend:")}   Vue, React, Tailwind, Material UI
   ${atlas("Backend:")}    Node, Express
   ${atlas("Database:")}   PostgreSQL, MongoDB
   
